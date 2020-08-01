@@ -1,0 +1,591 @@
+<html>
+
+    <head>
+         <meta charset="UTF-8"> 
+        
+        <title>Home - Zomato</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <script src="js/radial.js"></script>
+        
+        <link rel="stylesheet" href="css/cust-style.css" />
+    </head>
+
+    <body>
+        
+        <div class="overflow-menu smoothify">
+            
+            <div class="overflow-menu-item center">Home</div>
+            <div class="overflow-menu-item center">About</div>
+            <div class="overflow-menu-item center">Settings</div>
+            <div class="overflow-menu-item center">Logout</div>
+        </div>
+          
+        <div class="main-wrapper">
+            
+            <div class="main-wrapper-inner left-wrapper">
+                 
+                <div class="logo-holder">
+                    
+                    <figure class="logo-wrapper">
+                        <img id="logo" src="http://via.placeholder.com/95x95" />
+                        <figcaption>Sonakshi Jain</figcaption>
+                    </figure>
+                    
+                </div>
+                
+                <div class="menu-wrapper">
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="fas fa-search menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Search</span></a>
+                        </p>
+                    </div>
+                
+                    <div class="menu-item-nav active">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-copy menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Home</span></a>
+                        </p>
+                    </div>
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i class="far fa-user menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Restaurants</span>
+                        </p>
+                    </div> 
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-check-square menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Orders</span></a>
+                        </p>
+                    </div>
+                    
+                    <div class="menu-item-nav ">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-thumbs-up menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Reviews</span>
+                    </div> 
+                
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i class="fas fa-cog menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Settings</span>
+                        </p>
+                    </div> 
+                
+                    
+                </div>
+                
+                
+            </div>
+            
+            <div class="main-wrapper-inner right-wrapper">
+                
+                <div class="normal-view" style="display: none;">
+                
+                    <div class="overflow-menu-container center">
+                        <button class="logout-button">
+                            <i class="material-icons lg-button-icon smoothify">add</i>
+                        </button>                    
+                    </div>
+
+                    <div class="right-top-wrapper">
+
+                        <div class="recommended-res-wrapper">
+                            <div class="thirty-header">
+
+                                <span class="thirty-header-title">Recommended Restaurants</span>
+
+                                <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                            <div class="thirty-main">
+
+                                <div class="res-wrapper">
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>  
+                        </div>
+
+                        <div class="all-restaurants-wrapper">
+
+
+                            <div class="thirty-header">
+
+                                <span class="thirty-header-title">All Restaurants</span>
+
+                                <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                            <div class="thirty-main">
+
+                                <div class="res-wrapper">
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>  
+
+
+                        </div>
+
+                        <!--
+                        <div class="thirty smoothify enlarge-hover">
+
+                            <div class="thirty-header">
+
+                                <span class="thirty-header-title">Reviews</span>
+
+                                <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                            <div class="thirty-main">
+
+                                <div class="reviews-count-wrapper">
+                                </div>
+
+                                <div class="reviews-summary-wrapper">
+                                    <p class="review-summary">You got <span class="positive-percentage">+23.8%</span> positive reviews than last week.</p>
+                                </div>
+
+                                <div class="reviews-people-wrapper">
+
+                                    <img class="people-picture" src="http://via.placeholder.com/24x24" />
+
+                                    <img class="people-picture" src="http://via.placeholder.com/24x24" />
+
+                                    <img class="people-picture" src="http://via.placeholder.com/24x24" />
+
+                                </div>
+
+                            </div>
+
+                            <div class="thirty-footer">
+
+                                <div class="positive-reviews-wrapper">
+                                    <div style="padding: 5px; font-size: 20px;"><span>960</span></div>
+                                    <div class="reviews-display"><i class="fas fa-arrow-up up-icon"></i><span> &nbsp;Positive</span></div>
+                                </div>
+
+                                <div class="negative-reviews-wrapper">
+                                    <div style="padding: 5px; font-size: 20px;"><span>321</span></div>
+                                    <div class="reviews-display"><i class="fas fa-arrow-down down-icon"></i><span> &nbsp;Negative</span></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="thirty smoothify enlarge-hover">
+                            <div class="thirty-header">
+
+                                <span class="thirty-header-title">AV. Rating</span>
+
+                                <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                            <div class="thirty-main">
+
+                                <div class="ratings-count-wrapper">
+                                    <span class="rating-count">4.6</span>
+
+                                    <div class="star-ratings-css">
+                                        <div class="star-ratings-css-top" style="width: 84%">
+                                            <span class="rating-circle">●</span><span class="rating-circle">●</span><span class="rating-circle">●</span><span class="rating-circle">●</span><span class="rating-circle">●</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="rating-summary-wrapper">
+                                    <p class="rating-summary"><span class="negative-percentage">-0.4</span> points than last week.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="thirty-footer" style="border: none;"> 
+
+                                <canvas id="weekly-rating-chart" style="p height: 150px; width: 70%"></canvas>
+
+                            </div>
+                        </div>
+
+                        <div class="thirty smoothify enlarge-hover">
+                            <div class="thirty-header">
+
+                                <span class="thirty-header-title">Sentiment Analysis</span>
+
+                                <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                            </div>
+
+                            <div class="thirty-main" style="align-content: space-evenly">
+
+                                <div class="radial-indicator-wrapper">
+                                    <div class="radial-indicator" id="radial-positive-indicator"></div>
+                                    <div style="margin-left: 20px;"><p><span class="sentiment-review-count">250</span><br><span class="sentiment-type">Positive</span></p></div>
+                                </div> 
+
+                                <div class="radial-indicator-wrapper">
+                                    <div class="radial-indicator" id="radial-neutral-indicator"></div>
+                                    <div style="margin-left: 20px;"><p><span class="sentiment-review-count">128</span><br><span class="sentiment-type">Neutral</span></p></div>
+                                </div> 
+
+                                <div class="radial-indicator-wrapper">
+                                    <div class="radial-indicator" id="radial-negative-indicator"></div>
+                                    <div style="margin-left: 20px;"><p><span class="sentiment-review-count">34</span><br><span class="sentiment-type">Negative</span></p></div>
+                                </div> 
+
+                            </div>
+                        </div>
+                        -->
+                    </div>
+
+                    <div class="right-bottom-wrapper">
+                    
+                    <div class="thirty-header">
+                        
+                            <span class="thirty-header-title">Gold Restaurants</span>
+                            
+                            <button class="thirty-more-button" onclick="alert('asdas')"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                        
+                        <div class="thirty-main">
+                            
+                            <div class="res-wrapper">
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                                
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                                <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+                                    
+                                    <p class="restaurant-name-wrapper">
+                                        The Prem's <br />
+                                        <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                    </p>
+                                    
+                                    <div class="rating-wrapper">
+                                        <span>4.6</span>
+                                    </div>
+                                        
+                                </div>
+                            
+                            </div>
+                            
+                        </div> 
+                    
+                </div>
+                </div>
+            
+                <div class="search-view">
+                
+                    <div class="search-wrapper">
+                        
+                        <label style="font-size: 42px; padding-left: 20px;">
+                            <input name="search-field" class="search-input" spellcheck="false" placeholder="Start typing..."/>
+                        </label>
+                
+                    </div>
+                
+                    <div class="search-results-container">
+                        
+                        <div class="no-results-container center" style="display: none;">
+                        
+                            <p style="text-align: center; font-size: 22px; line-height: 40px;">
+                            No results found for "search_text". <br />
+                            You may want to broaden your search by using different keywords.
+                        </p>
+                        
+                        </div>
+                        
+                        <div class="search-result-exists-container">
+                            
+                            <div class="results-found-wrapper">
+                                
+                                <h1>Results</h1>
+                            
+                            </div>
+                            
+                             <div class="res-wrapper">
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+        <script src="js/home.js"></script>
+    </body>
+</html>

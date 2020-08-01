@@ -1,0 +1,297 @@
+<html>
+
+    <head>
+    <meta charset="UTF-8">
+
+    <title>Home - Zomato</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="js/radial.js"></script>
+
+    <link rel="stylesheet" href="css/restaurant-styles-reviews.css" />
+</head>
+
+<body>
+
+    <div class="overflow-menu smoothify">
+
+        <div class="overflow-menu-item center">Home</div>
+        <div class="overflow-menu-item center">About</div>
+        <div class="overflow-menu-item center">Settings</div>
+        <div class="overflow-menu-item center">Logout</div>
+    </div>
+
+    <div class="main-wrapper">
+
+        <div class="main-wrapper-inner left-wrapper">
+
+            <div class="logo-holder">
+
+                <figure class="logo-wrapper">
+                    <img id="logo" src="http://via.placeholder.com/95x95" />
+                    <figcaption>Sonakshi Jain</figcaption>
+                </figure>
+
+            </div>
+
+            <div class="menu-wrapper">
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i style="font-size: 18px" class="fas fa-search menu-item-icon"></i>
+                        <a href="#"><span class="menu-item-nav-text">Search</span></a>
+                    </p>
+                </div>
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i style="font-size: 18px" class="far fa-copy menu-item-icon"></i>
+                        <a href="#"><span class="menu-item-nav-text">Home</span></a>
+                    </p>
+                </div>
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i class="far fa-user menu-item-icon"></i>
+                        <span class="menu-item-nav-text">Restaurants</span>
+                    </p>
+                </div>
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i style="font-size: 18px" class="far fa-check-square menu-item-icon"></i>
+                        <a href="#"><span class="menu-item-nav-text">Orders</span></a>
+                    </p>
+                </div>
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i style="font-size: 18px" class="far fa-thumbs-up menu-item-icon"></i>
+                        <span class="menu-item-nav-text">Reviews</span>
+                </div>
+
+
+                <div class="menu-item-nav">
+                    <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                        <i class="fas fa-cog menu-item-icon"></i>
+                        <span class="menu-item-nav-text">Settings</span>
+                    </p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="main-wrapper-inner right-wrapper">
+
+            <div class="main-container-right">
+
+                <div class="main-container-inner">
+
+                    <div class="main-heading">
+
+                        <h1>Details</h1>
+
+                    </div>
+
+                    <div class="res-detail-page-wrapper center">
+
+                        <div class="res-detail-container">
+
+                            <div class="res-big-image-wrapper" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 59%, rgba(0, 0, 0, 0.7) 100%), url('https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+
+                                <div class="res-big-image-name-container">
+                                    The Largo Pizzeria <br />
+
+                                    <small class="res-location">Salunkhe Nagar, Vimannagar</small>
+                                </div>
+
+                                <div class="res-big-image-rating-wrapper">
+                                    4.3
+                                </div>
+
+                            </div>
+
+                            <div class="res-other-details-wrapper">
+
+                                <div class="res-horizontal-strip">
+
+                                    <div class="horizontal-menu-item">
+                                        Menu
+                                    </div>
+
+                                    <div class="horizontal-menu-item active">
+                                        Reviews
+                                    </div>
+
+                                    <div class="horizontal-menu-item">
+                                        About
+                                    </div>
+
+                                    <div class="horizontal-menu-item">
+                                        Photos
+                                    </div>
+                                </div>
+
+                                <div class="res-reviews">
+
+                                    <div class="review-container">
+
+                                        <div class="review-header">
+                                            <div class="reviewer-name">
+                                                Arpan Srivastava
+                                            </div>
+
+                                            <div class="reviewer-rating">
+                                                4.5
+                                            </div>
+                                        </div>
+
+                                        <div class="review-content">
+                                            <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="review-container">
+
+                                        <div class="review-header">
+                                            <div class="reviewer-name">
+                                                Prakash Sharma
+                                            </div>
+
+                                            <div class="reviewer-rating">
+                                                4.5
+                                            </div>
+                                        </div>
+
+                                        <div class="review-content">
+                                            <p class="review">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="review-adder">
+                                        
+                                        <div class="review-head">Add a review</div>
+
+                                        <form style="width: 100%;">
+
+                                            <div class="form-inner">
+                                                <div class="review-input">
+                                                    <textarea placeholder="Type your review here." class="review-ta" name="review"></textarea>
+                                                </div>
+
+                                                <div class="form-footer">
+                                                    <div class="rating-input">
+
+                                                        <fieldset class="rating">
+
+                                                            <input type="radio" id="star5" name="rating" value="5" />
+                                                            <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                                                            <input type="radio" id="star4half" name="rating" value="4 and a half" />
+                                                            <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+
+                                                            <input type="radio" id="star4" name="rating" value="4" />
+                                                            <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                                                            <input type="radio" id="star3half" name="rating" value="3 and a half" />
+                                                            <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+
+                                                            <input type="radio" id="star3" name="rating" value="3" />
+                                                            <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                                                            <input type="radio" id="star2half" name="rating" value="2 and a half" />
+                                                            <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+
+                                                            <input type="radio" id="star2" name="rating" value="2" />
+                                                            <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                                                            <input type="radio" id="star1half" name="rating" value="1 and a half" />
+                                                            <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+
+                                                            <input type="radio" id="star1" name="rating" value="1" />
+                                                            <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+
+                                                            <input type="radio" id="starhalf" name="rating" value="half" />
+                                                            <label class="half" for="starhalf" title="Bad big time - 0.5 stars"></label>
+
+                                                        </fieldset>
+                                                    </div>
+                                                    <div><button type=submit method="post" value="submit">Submit</button></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

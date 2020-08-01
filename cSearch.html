@@ -1,0 +1,191 @@
+<html>
+
+    <head>
+         <meta charset="UTF-8"> 
+        
+        <title>Home - Zomato</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <script src="js/radial.js"></script>
+        
+        <link rel="stylesheet" href="css/cSearch.css" />
+    </head>
+
+    <body>
+        
+        <div class="overflow-menu smoothify">
+            
+            <div class="overflow-menu-item center">Home</div>
+            <div class="overflow-menu-item center">About</div>
+            <div class="overflow-menu-item center">Settings</div>
+            <div class="overflow-menu-item center">Logout</div>
+        </div>
+          
+        <div class="main-wrapper">
+            
+            <div class="main-wrapper-inner left-wrapper">
+                 
+                <div class="logo-holder">
+                    
+                    <figure class="logo-wrapper">
+                        <img id="logo" src="http://via.placeholder.com/95x95" />
+                        <figcaption>Sonakshi Jain</figcaption>
+                    </figure>
+                    
+                </div>
+                
+                <div class="menu-wrapper">
+                    
+                    <div class="menu-item-nav active">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="fas fa-search menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Search</span></a>
+                        </p>
+                    </div>
+                
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-copy menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Home</span></a>
+                        </p>
+                    </div>
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i class="far fa-user menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Restaurants</span>
+                        </p>
+                    </div> 
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-check-square menu-item-icon"></i>
+                            <a href="#"><span class="menu-item-nav-text">Orders</span></a>
+                        </p>
+                    </div>
+                    
+                    <div class="menu-item-nav ">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i style="font-size: 18px" class="far fa-thumbs-up menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Reviews</span>
+                    </div> 
+                
+                    
+                    <div class="menu-item-nav">
+                        <p class="menu-item-inner" style="text-align: left; line-height: 10px;">
+                            <i class="fas fa-cog menu-item-icon"></i>
+                            <span class="menu-item-nav-text">Settings</span>
+                        </p>
+                    </div> 
+                
+                    
+                </div>
+                
+                
+            </div>
+            
+            <div class="main-wrapper-inner right-wrapper">
+                
+                <div class="search-view">
+                
+                    <div class="search-wrapper">
+                        
+                        <label style="font-size: 42px; padding-left: 20px;">
+                            <input name="search-field" class="search-input" spellcheck="false" placeholder="Start typing..."/>
+                        </label>
+                
+                    </div>
+                
+                    <div class="search-results-container">
+                        
+                        <div class="no-results-container center" style="display: none;">
+                        
+                            <p style="text-align: center; font-size: 22px; line-height: 40px;">
+                            No results found for "search_text". <br />
+                            You may want to broaden your search by using different keywords.
+                        </p>
+                        
+                        </div>
+                        
+                        <div class="search-result-exists-container">
+                            
+                            <div class="results-found-wrapper">
+                                
+                                <h1>Results</h1>
+                            
+                            </div>
+                            
+                             <div class="res-wrapper">
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="restaurant-container" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://via.placeholder.com/150x150'); ">
+
+                                        <p class="restaurant-name-wrapper">
+                                            The Prem's <br />
+                                            <small class="restaurant-cuisine-wrapper">North Indian, Mughlai</small>
+                                        </p>
+
+                                        <div class="rating-wrapper">
+                                            <span>4.6</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    
+        <script src="js/home.js"></script>
+    </body>
+</html>
